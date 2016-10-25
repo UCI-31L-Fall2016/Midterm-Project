@@ -62,12 +62,12 @@ alu_128bit L1 ( .op1(op1),
 
 
 initial begin   
-op1 = 128'd0;
-op2 = 128'd0;
+op1 = 'd0;
+op2 = 'd0;
 for (i=0;i<32;i++)begin
-    op2 = (i*pi);
+    op2 = (i**pi);
         for(j=0;j<3;j++) begin
-        op1 = ((i+j)*pi);
+        op1 = ((i+pi*j)**pi);
         #10;
         end
 end 
