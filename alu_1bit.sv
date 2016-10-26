@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module alu_128bit ( op1 , op2 , cin, opsel , mode , result , c_flag , z_flag , o_flag , s_flag );
+module alu_1bit ( op1 , op2 , cin, opsel , mode , result , c_flag , z_flag , o_flag , s_flag );
 
     input  logic        op1 ;
     input  logic        op2 ;
@@ -28,9 +28,9 @@ module alu_128bit ( op1 , op2 , cin, opsel , mode , result , c_flag , z_flag , o
     input  logic [ 2:0] opsel ;
     input  logic        mode ;
     output logic        result ;
-    output logic        c_flag ;
-    output logic        z_flag ;
-    output logic        o_flag ;
-    output logic        s_flag ;
+  //  output logic        c_flag ;
+  //  output logic        z_flag ;
+  //  output logic        o_flag ;
+  //  output logic        s_flag ;
 
 endmodule ;
